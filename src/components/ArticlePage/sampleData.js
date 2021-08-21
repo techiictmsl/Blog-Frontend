@@ -1,7 +1,7 @@
 export const sampleData = {
 	author: {
-		name: { fname: "", lname: "" },
-		prefession: "",
+		name: "",
+		about: "",
 		avatar: "avatar-link",
 		socialLinks: {
 			facebook: "facebook-link",
@@ -39,21 +39,13 @@ export const sampleData = {
 	images: ["image1-link", "image2-link"],
 	similarArticle: [
 		{
-			author: {
-				name: { fname: "", lname: "" },
-				prefession: "",
-				avatar: "avatar-link",
-			},
+			Articleid: "",
 			image: "image-link",
 			heading: "heading",
 			body: "euismod in pellentesque massa placerat duis ultricies le",
 		},
 		{
-			author: {
-				name: { fname: "", lname: "" },
-				prefession: "",
-				avatar: "avatar-link",
-			},
+			Articleid: "",
 			image: "image-link",
 			heading: "heading",
 			body: "euismod in pellentesque massa placerat duis ultricies le",

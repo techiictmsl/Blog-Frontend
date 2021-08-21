@@ -8,13 +8,20 @@
 }
 
 .login-main {
-	/*position: absolute;*/
 	width: 100%;
-	min-height: 100vh;
-	background: linear-gradient(45deg, var(--blue), var(--red));
+	height: auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.login-back {
+	position: absolute;
+	width: 100%;
+	min-height: 150vh;
+	top: 0;
+	background: linear-gradient(45deg, var(--blue), var(--red));
+	z-index: -10;
 }
 
 .login-card {
@@ -270,6 +277,9 @@
 	}
 	.divisor-line {
 		width: 6em;
+	}
+	.login-back {
+		height: max(50rem, 100%);
 	}
 }
 
