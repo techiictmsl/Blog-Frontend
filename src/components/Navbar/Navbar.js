@@ -42,18 +42,29 @@ const Navbar = () => {
 				style={
 					isTabletOrMobile
 						? dropped
-							? { height: "10em", paddingBottom: "1em" }
+							? { height: "15em", paddingBottom: "1em" }
 							: { height: "0" }
 						: {}
 				}>
 				<Link to='/' className='navbar-link'>
-					home
+					<p>home</p>
+					<span className='navlink-hover'></span>
 				</Link>
 				<Link to='/' className='navbar-link'>
-					about
+					<p>about</p>
+					<span className='navlink-hover'></span>
+				</Link>
+				<Link to='/' className='navbar-link'>
+					<p>services</p>
+					<span className='navlink-hover'></span>
 				</Link>
 				<Link to='/login' className='navbar-link'>
-					login/signup
+					<p>login</p>
+					<span className='navlink-hover'></span>
+				</Link>
+				<Link to='/' className='navbar-link'>
+					<p>signup</p>
+					<span className='navlink-hover'></span>
 				</Link>
 			</div>
 		</div>

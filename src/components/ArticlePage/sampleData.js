@@ -1,8 +1,9 @@
+import sample from "./sampleModel.svg";
 export const sampleData = {
 	author: {
-		name: "",
-		about: "",
-		avatar: "avatar-link",
+		name: "Shubhayu Mukharjee",
+		designation: "Author Designation",
+		avatar: sample,
 		socialLinks: {
 			facebook: "facebook-link",
 			twitter: "twitter-link",

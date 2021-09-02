@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+.article-body {
+	width: 100%;
+	height: fit-content;
+	border: 1px solid black;
+	font-size: 1rem;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.like-comment-col {
+	height: 12em;
+	width: 6em;
+	border: 2px solid black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.like-div,
+.comment-div {
+	height: 50%;
+	width: 100%;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.like-button,
+.comment-button {
+	height: 50%;
+	width: 50%;
+}
+
+.like-count,
+.comment-count,
+.author-designation,
+.author-name {
+	font-family: "Poppins", sans-serif;
+}
+.author-designation {
+	font-size: 0.8em;
+	color: gray;
+}
+
+.main-body {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	border: 1px solid black;
+	padding-left: 3em;
+}
+
+.about-author {
+	min-width: fit-content;
+	height: fit-content;
+	border: 1px solid black;
+	display: flex;
+	justify-content: space-around;
+	transform-origin: left;
+	transform: scale(0.9);
+}
+
+.author-face {
+	height: fit-content;
+	width: fit-content;
+	border: 1px solid black;
+	display: flex;
+	align-items: center;
+}
+
+.author-name-div {
+	min-width: 15em;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding-inline: 0.5em;
+}
+
+.author-name {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.author-avatar {
+	height: 5em;
+	width: auto;
+	transform-origin: center;
+	transform: scale(0.85);
+}
+
+.author-social-link {
+	width: 10em;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.social-icons {
+	height: 2.7em;
+	width: 2.7em;
+	transform-origin: center;
+	transition: transform 0.5s ease;
+	cursor: pointer;
+}
+
+.social-icons:hover {
+	transform: scale(1.1);
+}
+
+@media only screen and (max-width: 746px) {
+	.main-body {
+		padding: 0;
+	}
+	.like-comment-col {
+		width: min(4em, 100%);
+		height: auto;
+	}
+}

@@ -13,6 +13,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding-block: 1rem;
 }
 
 .login-back {
@@ -29,15 +30,18 @@
 	font-size: 1rem;
 	width: 52em;
 	height: 30em;
-	background-color: rgba(255, 255, 255, 0.15);
+	background-color: #8289f821;
+	/*background-image: linear-gradient(
+		180deg,
+		#8289f821 0%,
+		rgba(178, 182, 248, 0) 100%
+	);*/
 	backdrop-filter: blur(50px);
 	border-radius: 1em;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	box-shadow: 23px 23px 43px rgba(0, 0, 0, 0.15),
-		-23px -23px 43px rgba(0, 0, 0, 0.1);
-	border: 1px solid;
+	box-shadow: 7px 7px 2em rgba(0, 0, 0, 0.15);
 	border-image-source: linear-gradient(
 		138.62deg,
 		rgba(255, 216, 216, 0) 100%,
@@ -77,6 +81,18 @@
 
 .login-profile {
 	cursor: pointer;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.reading-login {
+	background-color: transparent;
+	height: 70%;
+	width: auto;
 }
 
 .login-profile .main-card {
@@ -123,9 +139,14 @@
 	justify-content: center;
 	align-items: center;
 	color: var(--textBlue);
-	box-shadow: 0px 0px 0.5em 0.5em rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 3px 4px rgba(0, 0, 0, 0.05);
 	cursor: pointer;
 	font-weight: 1000;
+	transition: box-shadow 0.2s ease;
+}
+
+.google-login:hover {
+	box-shadow: none;
 }
 
 .google-logo {
@@ -161,7 +182,7 @@
 	height: 2px;
 	width: 7em;
 	top: 50%;
-	background-color: #fff;
+	background-color: #000;
 	transform: translateY(-50%);
 }
 
@@ -208,6 +229,8 @@
 	width: 1.5em;
 	opacity: 0.7;
 	cursor: pointer;
+	border-radius: 50%;
+	opacity: 0.85;
 }
 
 .manual-login input {
@@ -219,16 +242,18 @@
 	padding-inline: 1em;
 	text-align: center;
 	background-color: var(--glass);
-	color: rgba(255, 255, 255, 0.7);
+	color: #000;
 	letter-spacing: 1px;
 	font-family: "Poppins", sans-serif;
 	transition: all 0.2s linear;
+	border: 1px solid rgba(0, 0, 0, 0.5);
 }
 .manual-login input:focus {
 	outline: none;
-	color: #000;
 	background-color: rgba(255, 255, 255, 0.5);
-	box-shadow: 0 0 0.5em 0.5em rgba(0, 0, 0, 0.1);
+	opacity: 1;
+	/*border: none;*/
+	/*box-shadow: 0 0 7px 7px rgba(0, 0, 0, 0.1);*/
 }
 
 .login-button {
@@ -239,23 +264,25 @@
 	left: 50%;
 	transform: translateX(-50%);
 	margin-top: 1em;
-	padding: 0.3em;
-	padding-inline: 2.5em;
+	padding: 0.2em;
+	padding-inline: 1.5em;
 	font-family: "Poppins", sans-serif;
-	background-color: var(--glass);
+	background-color: var(--deepBlue);
 	backdrop-filter: blur(50px);
+	color: #fff;
+	border-radius: 0.3em;
 }
 
 .login-button::before {
 	content: "";
 	position: absolute;
 	width: 50%;
-	height: 100%;
 	background-color: #fff;
-	left: 0;
-	top: 0;
+	left: 2px;
+	top: 2px;
+	bottom: 2px;
 	z-index: -1;
-	opacity: 0.05;
+	opacity: 0.2;
 }
 
 .login-eye {
