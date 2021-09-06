@@ -9,6 +9,10 @@ const Home = () => {
 	const [sampleData, setsampleData] = useState([]);
 	useEffect(() => {
 		setsampleData(data);
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
 	}, []);
 	return (
 		<DataProvider.Provider value={{ sampleData }}>
