@@ -6,16 +6,16 @@ import Navbar from "./components/Navbar/Navbar";
 import Article from "./components/ArticlePage/Articleview";
 
 function App() {
-	return (
-		<Router>
-			<Navbar />
-			<Switch>
-				<Route exact path='/' children={<Home />} />
-				<Route path='/login' children={<Login />} />
-				<Route path='/article/:id' children={<Article />} />
-			</Switch>
-		</Router>
-	);
+  return (
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route exact path="/" children={<Home />} />
+        <Route path="/login" children={<Login />} />
+        <Route path="/article/:id" children={<Article />} />
+      </Switch>
+    </Router>
+  );
 }
 
 export default App;
