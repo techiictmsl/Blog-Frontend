@@ -48,8 +48,8 @@ const NavItems = styled.div`
 `;
 
 function MobileNavBar({ changeOrder, order }) {
-    const dashActive = order === 0 ? "true" : "false";
-    const proActive = order === 1 ? "true" : "false";
+  const dashActive = order === 0 ? "true" : "false";
+  const proActive = order === 1 ? "true" : "false";
   return (
     <MobileNavWrapper>
       <nav>

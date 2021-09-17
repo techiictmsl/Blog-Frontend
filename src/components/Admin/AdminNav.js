@@ -33,7 +33,7 @@ const IconButton = styled.div`
   /* background-color: ${(props) =>
     props.active === "true" ? "#F5CFFF" : "transparent"}; */
   margin-bottom: 1.5rem;
-  background-color: #F5CFFF;
+  background-color: #f5cfff;
   border-radius: 10px;
   &:hover {
     background-color: #f5cff0aa;
