@@ -62,7 +62,7 @@ const Navbar = () => {
 					<p>login</p>
 					<span className='navlink-hover'></span>
 				</Link>
-				<Link to='/' className='navbar-link'>
+				<Link to='/signup' className='navbar-link'>
 					<p>signup</p>
 					<span className='navlink-hover'></span>
 				</Link>
